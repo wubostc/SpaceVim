@@ -19,13 +19,16 @@ let g:spacevim_enable_vimfiler_welcome = 1
 let g:spacevim_custom_plugins = [
     \ ['ryanoasis/vim-devicons'],
     \ ['octol/vim-cpp-enhanced-highlight'],
+    \ ['airblade/vim-gitgutter'],
+    \ ['tpope/vim-fugitive'],
+    \ ['junegunn/gv.vim'],
   \ ]
 let g:spacevim_error_symbol = '✘'
 let g:spacevim_warning_symbol = '⚠'
 let g:spacevim_info_symbol = 'ⓘ'
 
-let g:spacevim_enable_neomake = 0 
-let g:spacevim_enable_ale = 1
+let g:spacevim_enable_neomake = 1 
+let g:spacevim_enable_ale = 0 
 let g:spacevim_lint_on_the_fly = 1
 " }}}
 
@@ -38,7 +41,7 @@ let g:spacevim_lint_on_the_fly = 1
 " ALE: {{{
 let g:ale_sign_error = '✘'
 let g:ale_sign_warning = '⚠'
-let g:ale_cpp_clang_executable = 'clang++-6.0'
+let g:ale_cpp_clang_executable = 'clang'
 let g:ale_cpp_clang_options = '-std=c++17 -Wall'
 let g:ale_c_clang_options = '-std=c11 -Wall'
 
