@@ -30,6 +30,10 @@ let g:spacevim_info_symbol = 'ⓘ'
 let g:spacevim_enable_neomake = 1 
 let g:spacevim_enable_ale = 0 
 let g:spacevim_lint_on_the_fly = 1
+let g:spacevim_lint_on_save = 1
+
+let g:spacevim_enable_key_frequency = 1
+
 " }}}
 
 " SpaceVim Layers: {{{
@@ -56,6 +60,7 @@ let g:ycm_python_binary_path = '/usr/bin/python3.6'
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_min_num_of_chars_for_completion = 1
+let g:ycm_max_num_candidates = 0 " no limit
 let g:ycm_complete_in_comments = 1
 let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
@@ -79,3 +84,7 @@ let g:cpp_concepts_highlight = 1
 let g:cpp_no_function_highlight = 1
 " }}}
 
+" airblade/vim-gitgutter: {{{
+let g:gitgutter_max_signs = 300
+let g:gitgutter_map_keys = 0
+" }}}
